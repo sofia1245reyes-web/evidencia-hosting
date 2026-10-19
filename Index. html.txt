@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofi Estetic - Proyecto SENA</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f4f6f9; color: #333; line-height: 1.6; }
+        header { background-color: #2c3e50; color: white; padding: 1rem 2rem; position: sticky; top: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        nav { display: flex; justify-content: space-between; align-items: center; max-width: 1100px; margin: auto; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: #42b983; }
+        .nav-links { display: flex; list-style: none; gap: 20px; }
+        .nav-links a { color: white; text-decoration: none; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover { color: #42b983; }
+        section { padding: 60px 20px; max-width: 1000px; margin: 20px auto; background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        h2 { color: #2c3e50; margin-bottom: 15px; border-bottom: 2px solid #42b983; display: inline-block; padding-bottom: 5px; }
+        .grid-galeria { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 15px; }
+        .card { background: #eef2f5; padding: 30px; text-align: center; border-radius: 6px; font-weight: bold; color: #555; }
+        form { display: flex; flex-direction: column; gap: 10px; max-width: 400px; margin-top: 15px; }
+        input, textarea, button { padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+        button { background-color: #42b983; color: white; border: none; font-weight: bold; cursor: pointer; }
+        button:hover { background-color: #369b6e; }
+        footer { text-align: center; padding: 20px; background-color: #2c3e50; color: white; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN CON 5 OPCIONES -->
+    <header>
+        <nav>
+            <div class="logo">Sofi Estetic</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">1. Inicio</a></li>
+                <li><a href="#nosotros">2. Nosotros</a></li>
+                <li><a href="#servicios">3. Servicios</a></li>
+                <li><a href="#galeria">4. Galería</a></li>
+                <li><a href="#contacto">5. Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h2>1. Inicio</h2>
+        <p>Bienvenido al portal del proyecto. Esta plataforma demuestra la implementación y despliegue continuo en servicios de hosting gratuitos para la evidencia del SENA.</p>
+    </section>
+
+    <section id="nosotros">
+        <h2>2. Nosotros</h2>
+        <p>Somos una iniciativa dedicada al desarrollo de soluciones de software eficientes, combinando diseño intuitivo y estándares de calidad para el sector de la salud y estética.</p>
+    </section>
+
+    <section id="servicios">
+        <h2>3. Servicios</h2>
+        <p>Ofrecemos la gestión digital de historias clínicas, agenda de citas en línea y control de inventario especializado.</p>
+    </section>
+
+    <section id="galeria">
+        <h2>4. Galería</h2>
+        <div class="grid-galeria">
+            <div class="card">Módulo Citas</div>
+            <div class="card">Módulo Pacientes</div>
+            <div class="card">Módulo Reportes</div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>5. Contacto</h2>
+        <form onsubmit="event.preventDefault(); alert('Mensaje enviado correctamente');">
+            <input type="text" placeholder="Tu Nombre" required>
+            <input type="email" placeholder="Tu Correo" required>
+            <textarea placeholder="Tu Mensaje" rows="3" required></textarea>
+            <button type="submit">Enviar Consulta</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 - Análisis y Desarrollo de Software | SENA</p>
+    </footer>
+
+</body>
+</html>
